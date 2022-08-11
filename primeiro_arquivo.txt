@@ -1,0 +1,11 @@
+Aprendi que Git é um sistema que controla as versões do código, várias pessoas podem trabalhar em um mesmo projeto, pois ele gerencia as ramificações.
+O Git mantém o histórico de alterações do código e pode ser desfeito, voltando para a versão anterior.
+Principais comandos: 
+    git init - usado para iniciar um repositório;
+    git clone - clona códigos de um repositório;
+    git config - configuração inicial do Git;
+    git push - sobe alterações do repositório;
+    git status - informações sobre ramificações;
+    git commit - leva as alterações do local para o repositório no git;
+    git add - adciona aquivos ao repositório;
+    
