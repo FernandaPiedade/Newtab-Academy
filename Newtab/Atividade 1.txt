@@ -1,0 +1,8 @@
+Por enquanto você pode ver abaixo a atividade obrigatória deste módulo para se organizar em relação aos estudos e prática. O que você precisará fazer?
+
+Criar sua conta no GitHub, caso ainda não tenha.
+Criar o seu primeiro repositório público no GitHub. Sugestão de nome: aprendendo_git
+Criar um arquivo chamado primeiro_arquivo.txt
+Escreva nesse arquivo um resumo do que está aprendendo sobre Git e seus principais comandos.
+Adicione e envie esse arquivo para o seu repositório, na branch principal.
+Copie o link desse repositório e nos envie ao final do módulo.

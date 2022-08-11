@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<meta name='viewport' content='width=device-width, initial-sacale=1.0>
+	<title>FORMULÁRIO FERNANDA</title>
+	<style>
+	    body{
+		 font-family: Arial, Helvetica, sans-serif;
+		 backgraund: pink;
+		 text-align: center;
+		 color: white;
+	    }
+	    .container{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		width: 50%;
+		background-color: rgba;
+		padding: 1em;
+		border-radius: 10px
+	   }
+	   button{
+		background-color: slatepink;
+		color: white;
+		border: none;
+		padding 1em;
+		border-radius: 10px;
+		box-shadow: 1px 1px 5px black;
+		cursor: pointer;
+	   }
+	   button: hover{
+	       background-color: stellpink
+	   }
+	   .final-step,
+	   .second-step{
+		display:none;
+	   }
+	   input{
+		padding: 5px;
+		border-radius: 5px;
+		border: none;
+	   }
+	</style>
+</head>
+<body>
+    <h1> Fernanda Piedade</h1>
+    <div class='container'>
+        <div class='first-step'>
+		<p>Clique no botão para calcular</p>
+		<button onclick='go(1,2)'>Iniciar</button>
+	</div>
+	<div class='second-step'>
+	     <h3>Formulário de Soma</h3>
+	     <hr>
+	     <label for='valor1'> Digite um número:</label>
+	     <input type='number' placeholder='Valor 1' id='valor1'>
+	     <br><br>
+	     <label for='valor2'> Digite um número:</label>
+	     <input type='number' placeholder='Valor 2' id='valor2'>
+	     <br><br>
+	     <button onclick='validate()'>Somar</button>
+	</div>
+	<div class='final-step'>
+	     <h3>Resultado</h3>
+	     <p id='resultado'> ...</p>
+	     <button>Calcular Novamente</button>
+	     <button>Finalizar</button>
+	</div>
+    </div>
+</body>
+<script>
+    const firstDiv = document.querySelector('.first-step');
+    const secondDiv = document.querySelector('.second-step');
+    const finalDiv = document.querySelector('.final-step');
+
+    function go(currentStep,nextStep)
+    {
+	let dNone, dBlock;
+	if(currentStep == 1)
+	{
+	    dNone = firstDiv;
+	}
+	else if(currentStep == 2)
+	{
+	    dNone = secondDiv;
+	}
+	else
+	{
+	    dNone = finalDiv;
+	}
+
+	dNone.style.display = 'none';
+
+	if(nextStep == 1)
+	{
+	    dBlock = firtsDiv;
+	}
+	else if(nextStep == 2)
+	{
+	    dBlock = secondDiv;
+	}
+	else
+	{
+	    dBlock = finalDiv;
+	}
+	dBlock.style.display = 'block';
+     }
+     
+     function validate()
+     {
+	const valor1 = document.getElementById('valor1');
+	const valor2 = document.getElementById('valor2');
+	valor1.style.border = 'none';
+	valor2.style.border = 'none';
+	if(!valor1.value || !valor2.value)
+	{
+	    if(!valor1.value && !valor2.value)
+	    {
+	        valor1.style.border = '1px solid red';
+		valor2.style.border = '1px solid red';
+	    }
+	    else if(!valor1.value)
+	    {
+	 	valor1.style.border = '1px solid red';
+	    }
+	    else
+	    {
+		valor2.style.border = '1px solid red';
+	    }
+	}
+	else
+	{
+ 	      console.log('tudo ok! somar');
+
+	}
+     }
+<script>
+</html>
+
+
+
