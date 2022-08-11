@@ -1,2 +1,2 @@
 # Newtab-Academy
- Formlário simples de soma, projeto para teste de avaliação para bolsa de estudos.
+Projetos e teste das aulas de Dev Web
